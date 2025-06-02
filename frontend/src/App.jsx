@@ -20,6 +20,7 @@ import useAuth from './firebase/useAuth';
 import Navbar from './components/Navbar';
 import ChatAssistant from './components/ChatAssistant';
 import AddCarForm from './components/AddCarForm';
+import FloatingChatWidget from './components/FloatingChatWidget';
 
 import { doc, onSnapshot, setDoc, serverTimestamp } from 'firebase/firestore';
 
@@ -217,7 +218,7 @@ function App() {
 
       {/* Chat Assistant */}
       <div className="fixed bottom-4 right-4 z-50 bg-white shadow-xl rounded-xl p-4 w-80">
-        <ChatAssistant />
+        <FloatingChatWidget/>
       </div>
     </div>
   );

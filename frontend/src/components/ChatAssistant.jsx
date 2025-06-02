@@ -109,7 +109,7 @@ export default function ChatAssistant() {
       setMessages((prev) => [
         ...prev,
         { from: 'user', text: userMessage },
-        { from: 'ai', text: data.reply },
+        { from: 'ai', text: data.response.content },
       ]);
     } catch (err) {
       setError(err.message || 'Something went wrong');

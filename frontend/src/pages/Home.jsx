@@ -5,6 +5,7 @@ import CarCard from '../components/CarCard';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { db, auth } from '../firebase/config';
+import ChatAssistant from '../components/ChatAssistant';
 
 
 const WelcomeBanner = () => (
@@ -103,6 +104,10 @@ const Home = ({ cars, wishlist, toggleWishlist, loading, error }) => {
           emptyMessage="No matching cars found."
         />
       
+        {/* <div className="mt-10">
+        <ChatAssistant />
+        </div> */}
+
       </div>
      
   );
